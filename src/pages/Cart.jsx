@@ -3,12 +3,12 @@ import React from 'react';
 //import Input from '../components/Input/Input';
 
 
-export default function Home() {
+export default function Cart() {
  
   return (
-    <div className="home">
-      <h1>Welcome to Home</h1>
-      <p>This is the home page of your React application.</p>
+    <div className="cart">
+      <h1>Welcome to Cart</h1>
+      <p>This is the cart page of your React application.</p>
       
     </div>
   );
