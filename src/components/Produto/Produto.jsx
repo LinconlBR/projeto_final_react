@@ -18,9 +18,9 @@ export default function Produto({detalhes}) {
       </div>
       <div className="produto-checkout">
         <div>
-            <Botao outline className="produto-delete">x</Botao>
+            <Botao contorno className="produto-delete">x</Botao>
         </div>
-        <Botao outline>
+        <Botao contorno>
           R${detalhes.price}
         </Botao>
       </div>

@@ -28,7 +28,7 @@ const {get , carregador} = useFetch("https://react-tutorial-demo.firebaseio.com/
             <h1>Produtos</h1>
             <p>Dê uma olhada nos nossos produtos</p>
             <div className="produtos-grid">
-            {produtos.map((produto) => {
+            {produtos &&produtos.map((produto) => {
               return (
                 <Produto key={produto.id} detalhes={produto}></Produto>
               );
