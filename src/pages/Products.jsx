@@ -9,11 +9,8 @@ export default function Products() {
  
 const [produtos,setProdutos] = useState();
 const {get , carregador} = useFetch("https://react-tutorial-demo.firebaseio.com/");
-  useEffect(()=>{
-    console.log(produtos)
-  },[produtos])
-  useEffect(()=> { 
 
+  useEffect(()=> { 
       get("supermarket.json")
       .then(data => {
           data && setProdutos(data) 

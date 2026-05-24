@@ -1,13 +1,16 @@
 import React from "react";
 import './Produto.css'
 import Botao from '../Botao/Botao.jsx';
+import { NavLink } from "react-router-dom";
 
 
 export default function Produto({detalhes}) {
     return (
     <div className="produto">
       <div className="produto-image-container">
-        <img src={detalhes.image} width="100" height="100" className="produto-image" alt={detalhes.name} />
+        <NavLink to={`/produto/${detalhes.id}/detalhes`}>
+          <img src={detalhes.image} width="100" height="100" className="produto-image" alt={detalhes.name} />
+        </NavLink>
         <div className="produto-quantity-container">
         <div className="produto-quantity">0</div>
         </div>
