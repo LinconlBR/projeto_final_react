@@ -6,7 +6,10 @@ import NavBar from './components/NavBar/NavBar.jsx';
 import About from './pages/About.jsx';
 import Products from './pages/Products.jsx';
 import Cart from './pages/Cart.jsx';
-
+import ProductDetails from './pages/ProductDetails.jsx';
+import ProdutoDetalhes from './components/Produto/ProdutoDetalhes.jsx';
+import ProdutoNutricao from './components/Produto/ProdutoNutricao.jsx';
+import ProdutoArmazenamento from './components/Produto/ProdutoArmazenamento.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +23,11 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/sobre" element={<About/>}/>
             <Route path="/produtos" element={<Products/>}/>
+            <Route path="/produto/:id/" element={<ProductDetails />}>
+              <Route path="detalhes" element={<ProdutoDetalhes />} /> 
+              <Route path="nutricao" element={<ProdutoNutricao />} />
+              <Route path="armazenamento" element={<ProdutoArmazenamento />} />
+            </Route>
             <Route path="/carrinho" element={<Cart/>}/>
           </Routes>
           </div>

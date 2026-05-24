@@ -23,7 +23,7 @@ export default function NavBar() {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className={ativo} to="/produtos">
+          <NavLink end className={ativo} to="/produtos">
             Produtos
           </NavLink>
         </li>
