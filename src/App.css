@@ -16,7 +16,7 @@
     --neutral-4: #d9cfd3;
     --neutral-5: #f2ecee;
 
-    /* Accent-blue colors */
+    /* Accent colors */
     --accent-1: #970e3d;
     --accent-2: #c43464;
     --accent-3: #de7699;
@@ -90,6 +90,11 @@
     color: var(--white);
     background-color: var(--primary-2);
     text-decoration: none;
+    }
+    .produto-delete.btn-outline:hover {
+        color: var(--white);
+        background-color: var(--accent-3);
+        text-decoration: none;
     }
 
     .btn-default:active,

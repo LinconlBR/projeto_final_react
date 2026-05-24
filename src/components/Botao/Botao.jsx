@@ -8,7 +8,7 @@ export default function Botao (props){
         {
             btn:true,
             "btn-default":!contorno,
-            "btn-contorno":contorno,
+            "btn-outline":contorno,
         },
         className
     );
